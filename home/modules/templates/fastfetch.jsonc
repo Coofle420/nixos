@@ -1,0 +1,73 @@
+{
+  "display": {
+    "color": {
+      "keys": "{{ colors.primary.default.hex }}"
+    },
+    "separator": ""
+  },
+  "logo": {
+    "type": "builtin",
+    "source": "NixOS_small",
+    "padding": {
+      "right": 3,
+      "top": 1
+    }
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "{#keys}╭──────────────────────────────────────────────────────╮"
+    },
+    {
+      "type": "custom",
+      "format": "{#keys}│                     \u001b[1m{#{{ colors.tertiary.default.hex }}}TreeOnLinux\u001b[22m{#keys}                      │"
+    },
+    {
+      "type": "custom",
+      "format": "{#keys}├──────────────────────────────────────────────────────┤"
+    },
+    {
+      "type": "os",
+      "key": "{#keys}│  OS         \u001b[41C│\u001b[42D{#output}"
+    },
+    {
+      "type": "kernel",
+      "key": "{#keys}│  Kernel     \u001b[41C│\u001b[42D{#output}"
+    },
+    {
+      "type": "uptime",
+      "key": "{#keys}│  Uptime     \u001b[41C│\u001b[42D{#output}"
+    },
+    {
+      "type": "shell",
+      "key": "{#keys}│  Shell      \u001b[41C│\u001b[42D{#output}"
+    },
+    {
+      "type": "terminal",
+      "key": "{#keys}│  Terminal   \u001b[41C│\u001b[42D{#output}"
+    },
+    {
+      "type": "wm",
+      "key": "{#keys}│  WM         \u001b[41C│\u001b[42D{#output}"
+    },
+    {
+      "type": "cpu",
+      "format": "{name}",
+      "key": "{#keys}│  CPU        \u001b[41C│\u001b[42D{#output}"
+    },
+    {
+      "type": "gpu",
+      "key": "{#keys}│  GPU        \u001b[41C│\u001b[42D{#output}"
+    },
+    {
+      "type": "memory",
+      "key": "{#keys}│  Memory     \u001b[41C│\u001b[42D{#output}"
+    },
+    {
+      "type": "custom",
+      "format": "{#keys}╰──────────────────────────────────────────────────────╯"
+    },
+    "break",
+    "colors"
+  ]
+}

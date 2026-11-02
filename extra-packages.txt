@@ -1,0 +1,8 @@
+# System-wide extra packages — one per line.
+#
+# Almost everything should go through the home-manager `app add <name>`
+# instead (no sudo, no reboot). Only put something here if it genuinely needs
+# to be system-wide (kernel modules, setuid wrappers, system services).
+#
+# Easiest: use `app -s add <name>` from any shell (needs sudo once, now
+# passwordless for nixos-rebuild). Lines starting with # are ignored.

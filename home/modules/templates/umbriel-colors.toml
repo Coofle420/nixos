@@ -1,0 +1,4 @@
+[colors.border]
+focused = "{{ colors.primary.default.hex }}"
+unfocused = "{{ colors.outline.default.hex }}"
+outer = "{{ colors.shadow.default.hex }}"

@@ -1,0 +1,15 @@
+# Extra packages — one per line.
+#
+# Easiest: use the `app` command instead of editing this by hand:
+#
+#   app add mpv            install (and rebuild)
+#   app add jq tree        several at once
+#   app rm mpv             uninstall (and rebuild)
+#   app list               what is currently listed
+#   app search <term>      find package names
+#
+# Lines starting with # are ignored. Dotted names work, e.g.
+# kdePackages.dolphin
+unzip
+kdePackages.ark
+gh
